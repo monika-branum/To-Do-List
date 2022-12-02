@@ -41,7 +41,7 @@ async function displayTodos() {
     // clear the container (.innerHTML = '')
     for (let todo of todos) {
         const todoEl = renderTodo(todo);
-        console.log(todoEl);
+        // console.log(todoEl);
         todoEl.addEventListener('click', async () => {
             await completeTodo(todo.id);
 
@@ -68,11 +68,11 @@ logoutButton.addEventListener('click', () => {
 
 deleteButton.addEventListener('click', async () => {
     'click',
-        async () => {
-            await deleteAllTodos();
+    async () => {
+        await deleteAllTodos();
 
-            displayTodos();
-        };
+        displayTodos();
+    };
     // delete all todos
     // modify state to match
     // re displayTodos
