@@ -27,7 +27,7 @@ export async function getTodos() {
     // get all todos for this user from supabase
     // console.log('gettodo');
     // once you have a response from supabase, comment this back in:
-    console.log(response);
+
     return checkError(response);
 }
 
